@@ -6,7 +6,7 @@
     cursor: url(../assets/cursor.png), auto;
 }
 
-html{
+html {
     overflow-x: hidden;
 }
 
@@ -288,31 +288,101 @@ a:hover::after {
 /* end rada */
 
 /* Start Partners */
-.partners{
+.partners {
     margin-top: 200px;
-    background-image: url('../assets/turkus.svg') ,linear-gradient(to bottom, rgba(255,255,255,0) 40%,rgba(68,82,108,0) 58%,rgba(26,44,75,1) 62%);
+    background-image: url('../assets/turkus.svg'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(68, 82, 108, 0) 58%, rgba(26, 44, 75, 1) 62%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 837px;
     display: flex;
 }
-.partners__content{
+
+.partners__content {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 940px;
     flex-direction: column;
 }
-.partners__content .slider{
+
+.partners__content .slider {
     margin-top: 90px;
 }
-.partners__content .slider img{
+
+.partners__content .slider img {
     margin-left: 55px;
 }
+
 /* END Partners */
+/* START PAGE PARTNERT/CONFERENCE  */
+.partner__list {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.partner__item {
+    max-width: 350px;
+    width: 350px;
+    height: 350px;
+    background: rgb(136, 115, 115);
+    text-align: center;
+}
 
 
+/* This container is needed to position the front and back side */
+.partner__item-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.partner__item:hover .partner__item-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.partner__item-front,
+.partner__item-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.partner__item-front {
+    background-color: #bbb;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the back side */
+.partner__item-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partner__item-back a{
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 16px 50px;
+}
+/* END PAGE PARTNERT/CONFERENCE */
 
 
 /* page project */
@@ -372,6 +442,103 @@ a:hover::after {
     padding-right: 47px;
 }
 
+
+/* PAGE MISJA */
+
+.team {
+    height: 800px;
+    background-color: #F0FAF6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/Headphones_Icon.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    margin-top: 130px;
+
+
+}
+
+.team__content {
+
+    height: 620px;
+}
+
+.team__title {
+    margin: auto;
+    width: max-content;
+}
+
+.team__slider {
+    margin-top: 50px;
+    display: flex;
+    height: 100%;
+    /* justify-content: space-between;
+    width: 100%; */
+}
+
+.team__slider .team__people:first-child {
+    margin-left: 5px;
+}
+
+
+.team__people {
+    max-width: 227px;
+    width: 227px !important;
+    height: 350px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 13px solid #E31C26;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.person__container {
+    margin: 15px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.person__img {
+    max-width: 177.59px;
+    height: 177.59px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.person__info {
+    text-align: center;
+}
+
+.person__lastname {
+    color: #E31C26;
+}
+
+.person__contact ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* END PAGE MISJA */
+
+
+
+
+/* FOOTER */
 footer {
     padding-top: 150px;
     padding-bottom: 85px;
@@ -406,11 +573,12 @@ footer::after {
     justify-content: space-between;
     z-index: 2;
 }
-.footer__content h2{
+
+.footer__content h2 {
     color: #FFFFFF;
 }
 
-.footer__content p{
+.footer__content p {
     color: #FFFFFF;
 }
 
@@ -431,7 +599,8 @@ footer::after {
     margin-bottom: 40px;
     display: flex;
 }
-.content__item img{
+
+.content__item img {
     object-fit: contain;
 }
 
@@ -441,9 +610,10 @@ footer::after {
 
 .contact__item__information {
     margin-left: 16px;
-    
+
 }
-.contact__item__information p{
+
+.contact__item__information p {
     color: #093624;
     font-size: 16px;
     line-height: 124.33%;
@@ -465,9 +635,49 @@ footer::after {
     border-radius: 10px;
 }
 
-.social-media{
+.social-media {
     margin-top: 70px;
     color: white;
     width: 100%;
+
+}
+
+
+
+
+/*  Customizer slider*/
+.slick-track {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-slide {
+    width: 230px !important;
+    margin-right: 37px;
+}
+
+.slick-next,
+.slick-prev {
+    top: 25%;
+}
+
+.slick-next {
+    right: -10%;
+}
+
+.slick-prev {
+
+    left: -10%;
+}
+
+.slick-prev::before {
+    content: url('../assets/prev.svg');
+    left: -10%;
+}
+
+.slick-next:before {
+    content: url('../assets/next.svg');
+
 
 }
