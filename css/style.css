@@ -9,6 +9,10 @@
 html {
     overflow-x: hidden;
 }
+body{
+    /* max-width: 1440px;
+    margin: auto; */
+}
 
 h2 {
     line-height: 69px;
@@ -288,14 +292,20 @@ a:hover::after {
 /* end rada */
 
 /* Start Partners */
+.partners__color{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(68, 82, 108, 0) 58%, rgba(26, 44, 75, 1) 62%);
+}
 .partners {
     margin-top: 200px;
-    background-image: url('../assets/turkus.svg'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(68, 82, 108, 0) 58%, rgba(26, 44, 75, 1) 62%);
-    background-position: center;
+    background: #F0FAF6;
+    /* background-image: url('../assets/turkus.svg'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(68, 82, 108, 0) 58%, rgba(26, 44, 75, 1) 62%); */
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 837px;
     display: flex;
+    clip-path: url(#svgPath);
+    clip-path: polygon(83.2% 13%, 115.1% 66.5%, 101% 21%, 100% 71.5%, 84.3% 100%, 42.1% 91.8%, 6.9% 80%, 0% 63%, 0% 0%);
 }
 
 .partners__content {
@@ -539,15 +549,30 @@ a:hover::after {
 
 
 /* FOOTER */
+.svg_content{
+    /* background:  linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(68, 82, 108, 0) 0%, rgba(26, 44, 75, 1) 36%); */
+    max-width: 100%;
+    height: 300px;
+   
+}
+.svg_clip{
+    /* clip-path: url(#svgPat); */
+    /* background-color: #FFFFFF; */
+    height: 100%;
+    width: 100%;
+}
 footer {
-    padding-top: 150px;
+    /* padding-top: 150px; */
     padding-bottom: 85px;
     background: linear-gradient(180deg, #1A2C4B 0%, #0A1322 75%);
     /* background-image: url('../assets/footer.png');
     background-repeat: no-repeat; */
     position: relative;
     overflow: hidden;
+    
 }
+
+
 
 footer::after {
     content: '';
@@ -565,6 +590,7 @@ footer::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 200px;
 }
 
 .footer__content {
