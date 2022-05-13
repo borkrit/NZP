@@ -267,10 +267,11 @@ a:hover::after {
 
 /* Rada */
 .rada {
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 .rada__img img {
@@ -288,7 +289,17 @@ a:hover::after {
 .rada__content p {
     margin-top: 25px;
 }
-
+.rada__list {
+    width: 100%;
+    margin-top: 20px;
+}
+.rada__list ul{
+    list-style: none;
+    margin-top: 5px;
+}
+.rada__list ul li{
+    margin-top: 10px;
+}
 /* end rada */
 
 /* Start Partners */
@@ -326,6 +337,20 @@ a:hover::after {
 
 /* END Partners */
 /* START PAGE PARTNERT/CONFERENCE  */
+
+
+.conference__subtitle{
+    font-size: 16px;
+line-height: 35px;
+
+
+color: #4F4F4F;
+margin: 50px auto;
+}
+
+
+
+
 .partner__list {
     max-width: 100%;
     display: flex;
@@ -376,6 +401,11 @@ a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.partner__item-front img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
 }
 
 /* Style the back side */
@@ -552,8 +582,11 @@ a:hover::after {
 .svg_content{
     /* background:  linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(68, 82, 108, 0) 0%, rgba(26, 44, 75, 1) 36%); */
     max-width: 100%;
-    height: 300px;
    
+}
+.svg_content img{
+    width: 100%;
+    height: 100%;
 }
 .svg_clip{
     /* clip-path: url(#svgPat); */
@@ -579,7 +612,7 @@ footer::after {
     background: url('../assets/figure.png');
     position: absolute;
     left: 80%;
-    top: 15%;
+    top: 50%;
     width: 403.26px;
     height: 615.83px;
     background-repeat: no-repeat;
@@ -590,7 +623,7 @@ footer::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .footer__content {
