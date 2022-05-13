@@ -161,11 +161,12 @@ a:hover::after {
 
 .actual__item {
     width: 325px;
-    height: 480px;
+    /* height: 480px; */
     border-radius: 5px;
     background: #FFFFFF;
     box-shadow: 0px 15px 34px rgba(33, 37, 106, 0.1);
     margin-bottom: 25px;
+    padding-bottom: 15px;
 
 }
 
@@ -282,12 +283,14 @@ a:hover::after {
 }
 
 .rada__content {
-    max-width: 420px;
+    max-width: 450px;
     margin-left: 100px;
 }
 
 .rada__content p {
     margin-top: 25px;
+    font-size: 16px;
+    line-height: 30px;
 }
 .rada__list {
     width: 100%;
