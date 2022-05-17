@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/post/styles.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container ">
@@ -20,34 +23,30 @@
                 <ul class="header__navigation__list">
                     <li class="header__navigation__item"><a href="./mission.html">Organizacja</a></li>
                     <li class="header__navigation__item"><a href="./actual.html">Aktualności</a></li>
-                    <li class="header__navigation__item"><a href="/">Reprezentacja</a></li>
+                    <!-- <li class="header__navigation__item"><a href="/">Reprezentacja</a></li> -->
                     <li class="header__navigation__item"><a href="./confer.html">Konfederacja Lewiatan</a></li>
-                    <li class="header__navigation__item"><a href="/">Rada Regionów</a></li>
+                    <!-- <li class="header__navigation__item"><a href="/">Rada Regionów</a></li> -->
                     <li class="header__navigation__item"><a href="./project.html">Projekty</a></li>
-                    <li class="header__navigation__item"><a href="#">Kontakt</a></li>
+                    <li class="header__navigation__item"><a href="./contact.html">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="header__content">
                 <h1>
                     Nadwiślański Związek Pracodawców Lewiatan
                 </h1>
-                <p>
-                    Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-                    Donec
-                    rutrum congue leo eget malesuada.
-                </p>
+              
                 <img src="./assets/Lewiatan_Członek.png" alt="Lewiatan_Członek">
             </div>
-
         </div>
     </header>
+
     <main>
-        <div class="post container">
-            <div class="post__content">
-                <h1 class="post__title">
+        <div class="post-wrapper">
+            <div class="post-wrapper-text">
+                <h1>
                     Velit officia consequat dolor set duis enim velit mollit. 
                 </h1>
-                <span class="post__data">2 czerwca 2021</span>
+                <span class="data">2 czerwca 2021</span>
                
                 <p class="post-first">Physiological respiration involves the mechanisms that ensure that the composition of the functional residual capacity is kept constant, and equilibrates with the gases dissolved in the pulmonary capillary blood, and thus throughout the body.
                     <br/>
@@ -56,43 +55,84 @@
                 </p>
 
             </div>
-            
-            
-            
-            
+            <div class="img-container flw">
+                <div class="w-480"> <img src="./assets/post1.png" alt=""  ></div>
+               <div class="w-680">
+                <img src="./assets/post2.png" alt="">
+               </div>
+                
+            </div>
+            <div class="post-wrapper-text">
+                             
+                <p>For athletes, high altitude produces two contradictory effects on performance. For explosive events (sprints up to 400 metres, long jump, triple jump) the reduction in atmospheric pressure means there is less resistance from <b>the atmosphere and the athlete's performance</b> will generally be better at high altitude.
+                </p>
+
+            </div>
+            <div class="img-container flc ">
+                <div class="w-580">
+                    <img src="./assets/post3.png" alt="" class="" >
+                
+                </div>
+                   <span>Lorem ipsum dolor</span>
+            </div>
+            <div class="post-wrapper-text">
+               
+                <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of knowledge in which knowledge about space can be both a priori and synthetic. According to Kant, knowledge about space is synthetic, in that statements about space are not simply true by virtue of the meaning of the words in the statement.
+                    <br/>
+                    <br/>
+                    In his work, Kant rejected the view that space must be either a substance or relation. Instead he came to the conclusion that space and time are not discovered by humans to be objective features of the world, but imposed by us as part of a framework for organizing experience.
+                </p>
+
+            </div>
+            <div class="img-container flc ">
+                <div class="w-1180">
+                    <img src="./assets/post4.png" alt="" class="" >
+                
+                   </div>
+                   <span>Lorem ipsum dolor</span>
+            </div>
         </div>
     </main>
+
+
+    
     <footer>
+        <div class="svg_content">
+          
+            <img src="./assets/foot.png" alt="">
+                
+                
+        </div>
         <div class="container footer">
             <div class="footer__content">
                 <h2>Masz pytanie? Napisz do nas! </h2>
                 <p>Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec
                     rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget
                     malesuada.</p>
-                <div class="contact__list">
-                    <div class="contact__item">
-                        <img src="./assets/mail.png" alt="">
-                        <div class="contact__item__information">
-                            <p>E-mail</p>
-                            <span>nzp.bydgoszcz@nzp.pl</span>
+                    <div class="contact__list">
+                        <div class="contact__item">
+                            <img src="./assets/mail.png" alt="">
+                            <div class="contact__item__information">
+                                <p>E-mail</p>
+                                <span>katarzyna.m@nzp.org.pl</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact__item">
-                        <img src="./assets/phone.png" alt="">
-                        <div class="contact__item__information">
-                            <p>Telefon</p>
-                            <span>404 512 312</span>
+                        <div class="contact__item">
+                            <img src="./assets/phone.png" alt="">
+                            <div class="contact__item__information">
+                                <p>Telefon</p>
+                                <span>504297093</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact__item">
-                        <img src="./assets/adres.png" alt="">
-                        <div class="contact__item__information">
-                            <p>Adres</p>
-                            <span>ul. Przykładowa 00, 00-000 Bydgoszcz </span>
+                        <div class="contact__item">
+                            <img src="./assets/adres.png" alt="">
+                            <div class="contact__item__information">
+                                <p>Adres</p>
+                                <span>ul. Bydgoskich Przedsiębiorców 6/101, 85-862 Bydgoszcz</span>
+                            </div>
                         </div>
+    
                     </div>
-
-                </div>
             </div>
             <div class="footer__map">
                 <iframe width="495" height="530" id="gmap_canvas"
@@ -105,5 +145,6 @@
         </div>
 
     </footer>
-</body>
-</html>
+        
+    </body>
+    </html>

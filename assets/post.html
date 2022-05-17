@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./header/styles.css">
+    <link rel="stylesheet" href="header/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fbeab37273.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper mobile">
+            <a href="./index.html"> <img src="header/logo.png" alt="" class="logo" ></a>
+            <div class="tabs topmenu" id="topmenu">
+                <ul id="mob-menu">
+                    <li><a href="./about.html"> O nas</a></li>
+                    <li><a href="./project.html">Projekty</a></li>
+                    <li><a href="./actual.html">Aktualności</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                </ul>
+                <button class='tab-btn--red' type="button" onclick="window.location.href='./prekaz.html'">Przekaż darowiznę</button>
+                
+                <a class="burger close" href="javascript:void(0);" onclick="closeMenu()"><i class="fa fa-times"></i></a>
+            </div>
+            <a class="burger" href="javascript:void(0);" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="post-wrapper">
+            <div class="post-wrapper-text">
+                <h1>
+                    Velit officia consequat dolor set duis enim velit mollit. 
+                </h1>
+                <span class="data">2 czerwca 2021</span>
+               
+                <p class="post-first">Physiological respiration involves the mechanisms that ensure that the composition of the functional residual capacity is kept constant, and equilibrates with the gases dissolved in the pulmonary capillary blood, and thus throughout the body.
+                    <br/>
+                    <br/>
+                    Thus, in precise usage, the words breathing and ventilation are hyponyms, not synonyms, of respiration; but this prescription is not consistently followed, even by most health <b>care providers</b> , because the term respiratory rate (RR) is a well-established term in health care, even though it would need to be consistently replaced with ventilation rate if the precise usage were to be followed.
+                </p>
+
+            </div>
+            <div class="img-container flw">
+                <div class="w-480"> <img src="post1.png" alt=""  ></div>
+               <div class="w-680">
+                <img src="post2.png" alt="">
+               </div>
+                
+            </div>
+            <div class="post-wrapper-text">
+                             
+                <p>For athletes, high altitude produces two contradictory effects on performance. For explosive events (sprints up to 400 metres, long jump, triple jump) the reduction in atmospheric pressure means there is less resistance from <b>the atmosphere and the athlete's performance</b> will generally be better at high altitude.
+                </p>
+
+            </div>
+            <div class="img-container flc ">
+                <div class="w-580">
+                    <img src="post3.png" alt="" class="" >
+                
+                </div>
+                   <span>Lorem ipsum dolor</span>
+            </div>
+            <div class="post-wrapper-text">
+               
+                <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of knowledge in which knowledge about space can be both a priori and synthetic. According to Kant, knowledge about space is synthetic, in that statements about space are not simply true by virtue of the meaning of the words in the statement.
+                    <br/>
+                    <br/>
+                    In his work, Kant rejected the view that space must be either a substance or relation. Instead he came to the conclusion that space and time are not discovered by humans to be objective features of the world, but imposed by us as part of a framework for organizing experience.
+                </p>
+
+            </div>
+            <div class="img-container flc ">
+                <div class="w-1180">
+                    <img src="post4.png" alt="" class="" >
+                
+                   </div>
+                   <span>Lorem ipsum dolor</span>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <footer>
+        <div class="wrapper">
+            <div class="first-block">
+                <div class="social">
+                    <img src="header/logo.png" alt="" class="logo">
+                    <div class="social-icon">
+                        <img class="facebook" src="bx_bxl-facebook-square.png" alt="">
+                        <img src="ant-design_instagram-filled.png" alt="">
+                    </div>
+                </div>
+                <div class="about-us">
+                    <p class="foot-title">Fundacja Nad Rzeką</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>O nas</li>
+                        <li>Projekty</li>
+                        <li>Aktualności</li>
+                        <li>Blog</li>
+                        <li>Kontakt</li>
+                        <li>Polityka prywatności</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-block">
+                <div class="year">
+                    <p>2021 (c) Fundacja Nad Rzeką</p>
+                </div>
+                <div class="krs">
+                    <p>KRS: 40320402340</p>
+                    <p>NIP: 342-342-43-43</p>
+                    <p>REGON: 242432423</p>
+                </div>
+                <div class="contact-inform">
+                    <p>tel.: +48 342 324 342</p>
+                    <p>e-mail: kontakt@nadrzeka.pl</p>
+                </div>
+                <div class="year2">
+                    <p>2021 (c) Fundacja Nad Rzeką</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+ 
+        
+    
+        function openMenu(){
+    let menu = document.getElementById("topmenu");
+    menu.style.display = "flex";
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+}
+
+function closeMenu(){
+    let menu = document.getElementById("topmenu");
+    menu.style.display = "none";
+    document.getElementsByTagName('body')[0].style.overflow = 'visible'
+}
+
+
+let allDiv = document.querySelector('.main-about');
+    allDiv.children
+
+    if(allDiv.children.length >1){
+        for(let i =1; allDiv.children.length >1;i++ ){
+            allDiv.children[i].style.display='none' 
+        }
+       
+    }
+
+        </script>
+    
+        
+    </body>
+    </html>

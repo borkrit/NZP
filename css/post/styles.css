@@ -1,0 +1,256 @@
+
+
+
+.post-wrapper,
+.project-wrapper{
+    width: calc(100% - 260px);
+    margin: 100px auto 150px ;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.project{
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 8px;
+}
+.project-img img{
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.project-text{
+    width: 70%;
+}
+.project-text .project-title{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: dodgerblue;
+}
+.project-text-content{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 30px 70px 30px 0;
+    color: #111111;
+}
+.more-inf a{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: dodgerblue;
+
+}
+
+
+.post-wrapper-text{
+    width: 769px;
+    margin: auto;
+}
+.post-wrapper-text h1 { 
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: dodgerblue;
+    margin-bottom: 10px;
+}
+.post-wrapper-text p {
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 31px;
+    color: #111111;
+}
+.post-wrapper-text .data{
+    font-family: var(--lora);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px; 
+    color: #111111;
+    
+}
+.post-first{
+    margin-top: 40px;
+}
+.img-container{
+   margin: 40px 0;
+   display: flex;
+   text-align: center;
+}
+
+.w-280{
+    width: 280px;
+    height: 400px;
+}
+
+.w-480{
+    width: 40%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.w-380{
+    width: 100%;
+    object-fit: contain;
+}
+.w-680{
+    width: 56%;
+    
+    overflow: hidden;
+}
+.w-580{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+.w-1180{
+    margin: auto;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.img-container img{
+    width: 100%;
+    object-fit: contain;
+}
+.img-container span{
+    font-family: var(--lora);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #111111;
+}
+.flc{
+    flex-direction: column;
+}
+.flw{
+    flex-wrap: wrap;
+}
+.re-margin{
+    margin-bottom: 0;
+}
+.rezero-margin{
+    margin-top: 0;
+    padding-top: 0;
+}
+.mb80{
+    margin-bottom: 80px;
+}
+.burger{
+    color: black;
+    display: none;
+}
+.year{
+    display: block;
+}
+.year2{
+    display: none;
+}
+.rozdzial,
+.set-files{
+    margin-top: 40px;
+}
+.set-files p{
+    margin-bottom: 20px;
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    text-decoration-line: underline;
+
+    color: dodgerblue;
+}
+.set-files p .fa-file-pdf{
+    margin-right: 10px;
+    color: red;
+   font-size: 36px;
+}
+.prawilo{
+    margin-top: 10px;
+}
+.prawilo p{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+    
+}
+.im-coop img{
+    width: auto;
+}
+.wr{
+    gap: 39px;
+}
+
+
+.wrapper-contact{
+    margin-top: 100px;
+    margin:100px auto 0;
+    width: 780px;
+    
+}
+.wrapper-contact h1 {
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #111111;
+}
+.wrapper-contact .contact-text{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    color: #111111;
+    margin-top: 40px;
+
+}
+.wrapper-contact .block-phone{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+
+}
+.wrapper-contact .konto{
+    margin-top: 40px;
+    justify-content: space-around;
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+
+}
