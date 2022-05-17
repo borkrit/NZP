@@ -366,7 +366,9 @@ a:hover::after {
 /* END Partners */
 /* START PAGE PARTNERT/CONFERENCE  */
 
-
+.conference{
+    margin-top: 110px;
+}
 .conference__subtitle {
     font-size: 16px;
     line-height: 35px;
