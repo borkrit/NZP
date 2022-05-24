@@ -582,7 +582,7 @@ a:hover::after {
     /* margin-bottom: 50px; 
 } */
 .biuro{
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
 .biuro-slider{
     padding-bottom: 20px;
