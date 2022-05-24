@@ -104,6 +104,7 @@ a:hover::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header__navigation__list {
@@ -118,9 +119,39 @@ a:hover::after {
 .header__navigation__item:last-child {
     margin-right: 0;
 }
+.social__links{
+    
+    width: max-content;
+    
+}
+.position-social{
+    left: 90%;
+    top: 10%;
+    position: absolute;
+}
+.social__links ul{
+    list-style: none;
+    display:flex;
+    column-gap: 12px;
+    align-items: center;
+}
+.social__links svg:hover path{
+    fill: rgb(108, 190, 119);
+}
+.social__links svg, .social__links path{
+    cursor: pointer;
+}
+
+
+:where(.social__links,.actual__item ) a:hover::after,
+.header__navigation__logo:hover::after {
+    content: '';
+    border: none;
+}
+
 
 .header__content {
-    margin-top: 120px;
+    margin-top: 150px;
 
 }
 
@@ -280,7 +311,7 @@ a:hover::after {
 
 /* Rada */
 .rada {
-    margin-top: 150px;
+    margin-top: 120px;
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
@@ -335,7 +366,7 @@ a:hover::after {
 }
 
 .partners {
-    margin-top: 200px;
+    margin-top: 100px;
     /* background: #F0FAF6; */
     /* background-image: url('../assets/turkus.svg'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(68, 82, 108, 0) 58%, rgba(26, 44, 75, 1) 62%); */
     /* background-position: center;
@@ -535,6 +566,11 @@ a:hover::after {
 
 
 }
+section.biuro{
+    background-image: url('../assets/office-buildings.svg');
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
 
 .team__content {
 
@@ -552,6 +588,7 @@ a:hover::after {
     height: 100%;
     /* justify-content: space-between;
     width: 100%; */
+    justify-content: center;
 }
 
 .team__slider .team__people:first-child {
@@ -608,6 +645,9 @@ a:hover::after {
     align-items: center;
     justify-content: space-evenly;
 }
+.person__contact li{
+    text-align: center;
+}
 .person__contact a {
     color: #0A1322;
     font-size: 16px;
@@ -619,7 +659,7 @@ a:hover::after {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 940px;
+    height: 740px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -666,7 +706,7 @@ a:hover::after {
 
 .svg_content img {
     width: 100%;
-    height: 100%;
+    height: 200px;
 }
 
 .svg_clip {
@@ -781,6 +821,9 @@ footer::after {
     margin-top: 70px;
     color: white;
     width: 100%;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 20px;
 
 }
 
