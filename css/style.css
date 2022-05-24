@@ -181,6 +181,15 @@ a:hover::after {
 /* Actual */
 .actual {
     margin-top: 110px;
+    position: relative;
+}
+#filter{
+    position: absolute;
+    padding: 5px 11px;
+    width: 120px;
+    font-size: 17px;
+    font-weight: bold;
+    left: 90%;
 }
 
 .actual__list {
@@ -553,7 +562,7 @@ a:hover::after {
 /* PAGE MISJA */
 
 .team {
-    height: 800px;
+    height: max-content;
     background-color: #F0FAF6;
     display: flex;
     align-items: center;
@@ -566,15 +575,21 @@ a:hover::after {
 
 
 }
-section.biuro{
+
+/* section.biuro{
     background-image: url('../assets/office-buildings.svg');
     margin-top: 50px;
-    /* margin-bottom: 50px; */
+    /* margin-bottom: 50px; 
+} */
+.biuro{
+    margin-top: 20px;
 }
-
+.biuro-slider{
+    padding-bottom: 20px;
+}
 .team__content {
 
-    height: 620px;
+    height: max-content;
 }
 
 .team__title {
