@@ -660,6 +660,10 @@ a:hover::after {
     align-items: center;
     justify-content: space-evenly;
 }
+.person__list--col{
+    flex-direction: column;
+}
+
 .person__contact li{
     text-align: center;
 }
